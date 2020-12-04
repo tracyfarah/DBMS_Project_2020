@@ -126,9 +126,11 @@
 
 		<div class="container zoomIn animated">
 
-			<h1 class="page-title">DONATE<span class="title-under"></span></h1>
+			<h1 class="page-title">Volunteer<span class="title-under"></span></h1>
 			<p class="page-description">
-				Donate money, food boxes or medical supplies to save lives.<br>
+                Volunteer and help many others.<br>
+                Our team will be in contact with you very soon.
+            
 			</p>
 
 		</div>
@@ -143,16 +145,16 @@
 
 				<div class="col-md-7 col-sm-12 col-form">
 
-					<h2 class="title-style-2">Fill here to donate <span class="title-under"></span></h2>
+					<h2 class="title-style-2">Apply Here <span class="title-under"></span></h2>
 
 					<form action="php/mail.php" class="contact-form ajax-form">
 
 						<div class="row">
 
 							<div class="form-group col-md-8">
-								<label for="txt_famname"><strong>Full Name*</strong></label>
-								<input type="text" name="txt_famname" class="form-control" placeholder="Enter Full Name"
-									id="txt_username" required>
+								<label for="txt_volname"><strong>Full Name*</strong></label>
+								<input type="text" name="txt_volname" class="form-control" placeholder="Enter Full Name"
+									id="txt_volname" required>
 							</div>
 
 							<div class="form-group col-md-8">
@@ -175,34 +177,22 @@
 							</div>
 
 							<div class="form-group col-md-8">
-								<label for="txt_email"><strong>Email Address</strong> (optional)</label>
+								<label for="txt_email"><strong>Email Address*</strong></label>
 								<input type="text" name="txt_email" class="form-control" placeholder="Enter Email Address"
-									id="txt_email">
+									id="txt_email" required>
 							</div>
-
                             
-							<div class="form-group col-md-8">
-                                <label for="txt_donation"><strong>Donation Type</strong></label><br>
-                                <input type="checkbox" id="dt_money" name="txt_donation" value="dt_money">
-								<label for="dt_money" style="font-weight: normal;">Money</label><br>
-								<input type="checkbox" id="dt_food" name="txt_donation" value="dt_food">
-								<label for="dt_food" style="font-weight: normal;">Food</label><br>
-								<input type="checkbox" id="dt_shelter" name="txt_donation" value="dt_shelter">
-								<label for="dt_medical" style="font-weight: normal;">Medical Supplies</label><br>
-								<label for="dt_amount" style="margin-right: 5px;"><strong>Quantity</strong></label>
-								<input type="number" name="dt_amount" id="dt_amount" min="1" value="1" >
-							</div>
-
 							<div class="form-group col-md-8">
 								<label for="txt_cmts"><strong>Other Comments</strong></label>
 								<textarea name="txt_cmts" id="txt_cmts" class="form-control"
 									placeholder="Leave your comments here."></textarea>
-							</div>
+                            </div>
 
 
 						</div>
 						<div class="form-group">
-							<button type="submit" id="bt-request" class="btn btn-primary pull-5">Submit request</button>
+                            <i>You must be at least 18* years of age.</i> <br><br>
+							<button type="submit" id="bt_volunteer" class="btn btn-primary pull-5">Send</button>
 						</div>
 					</form>
 				</div>
