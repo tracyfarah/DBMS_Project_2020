@@ -128,8 +128,7 @@
 
 			<h1 class="page-title">Volunteer<span class="title-under"></span></h1>
 			<p class="page-description">
-                Volunteer and help many others.<br>
-                Our team will be in contact with you very soon.
+                We will match you with groups of volunteers, families and people in need.
             
 			</p>
 
@@ -145,39 +144,44 @@
 
 				<div class="col-md-7 col-sm-12 col-form">
 
-					<h2 class="title-style-2">Apply Here <span class="title-under"></span></h2>
-
+					<h2 class="title-style-2">Sign up to volunteer <span class="title-under"></span></h2>
+					<i>You must be at least 18* years of age.</i> <br><br>
 					<form action="php/mail.php" class="contact-form ajax-form">
 
 						<div class="row">
 
 							<div class="form-group col-md-8">
-								<label for="txt_volname"><strong>Full Name*</strong></label>
+								<label for="txt_volname"><strong>Full Name *</strong></label>
 								<input type="text" name="txt_volname" class="form-control" placeholder="Enter Full Name"
 									id="txt_volname" required>
 							</div>
 
 							<div class="form-group col-md-8">
-								<label for="txt_ssn"><strong>Social Security Number*</strong></label>
+								<label for="txt_ssn"><strong>Social Security Number *</strong></label>
 								<input type="number" name="txt_ssn" class="form-control" placeholder="Enter SSN"
 									id="txt_ssn" required>
 							</div>
 
+							<div class="form-group col-md-8">
+								<label for="vol_age"><strong>Age * </strong></label>
+								<input type="number" name="vol_age" id="vol_age"  min="18" max="60"value="18">
+							</div>
+
 
 							<div class="form-group col-md-8">
-								<label for="txt_phone"><strong>Phone Number*</strong></label>
+								<label for="txt_phone"><strong>Phone Number *</strong></label>
 								<input type="number" name="txt_phone" class="form-control"
 									placeholder="Enter Phone Number" id="txt_phone" required>
 							</div>
 
 							<div class="form-group col-md-8">
-								<label for="txt_addr"><strong>Address*</strong></label>
+								<label for="txt_addr"><strong>Address *</strong></label>
 								<textarea name="txt_addr" id="txt_addr" class="form-control"
 									placeholder="Enter your full address here." required></textarea>
 							</div>
 
 							<div class="form-group col-md-8">
-								<label for="txt_email"><strong>Email Address*</strong></label>
+								<label for="txt_email"><strong>Email Address *</strong></label>
 								<input type="text" name="txt_email" class="form-control" placeholder="Enter Email Address"
 									id="txt_email" required>
 							</div>
@@ -191,8 +195,8 @@
 
 						</div>
 						<div class="form-group">
-                            <i>You must be at least 18* years of age.</i> <br><br>
-							<button type="submit" id="bt_volunteer" class="btn btn-primary pull-5">Send</button>
+							<button type="submit" id="bt_volunteer" class="btn btn-primary ">Sign Up</button><br>
+							<br>By clicking on the button, you consent to the processing of personal data.
 						</div>
 					</form>
 				</div>

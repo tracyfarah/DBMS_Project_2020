@@ -18,7 +18,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Formular',Arial,sans-serif;
 }
 
 a {
@@ -40,7 +40,7 @@ a:hover, a:focus, a:active {
 }
 
 #right{
-  padding-left: 400px;
+  padding-left: 300px;
 }
 
 .navbar-top {
@@ -106,8 +106,8 @@ a:hover, a:focus, a:active {
   font-size: 16px;
 }
 .navbar-main li a {
-  font-family: "Dosis", sans-serif;
-  font-size: 18px;
+  font-family: 'Formular',Arial,sans-serif;
+  font-size: 16px;
   padding: 20px 15px;
   border-bottom: 2px solid transparent;
 }
@@ -153,7 +153,7 @@ a:hover, a:focus, a:active {
 }
 .carousel-home .carousel-title {
   color: #fff;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Formular',Arial,sans-serif;
   font-size: 50px;
   font-weight: bold;
   text-transform: uppercase;
@@ -690,7 +690,7 @@ input:not(#txt_members,#txt_qty,#dt_amount)::-webkit-inner-spin-button {
   right: 5px;
   font-style: 18px;
   display: block;
-  font-family: "Dosis", sans-serif;
+  font-family: 'Formular',Arial,sans-serif;
   bottom: -50px;
   -moz-transition: all, 0.6s;
   -o-transition: all, 0.6s;
