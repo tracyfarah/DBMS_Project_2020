@@ -584,6 +584,8 @@ input:not(#txt_members,#txt_qty,#dt_amount)::-webkit-inner-spin-button {
 .table-style-1 td,
 .table-style-1 th {
   border-bottom: 1px solid #1f76bd;
+  padding:0 15px;
+  text-align: center;
 }
 
 .table-style-2 thead {
