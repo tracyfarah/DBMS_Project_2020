@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Donate</title>
+	<title>Request Help</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,7 +22,6 @@
 
 	<!-- Modernizr -->
 	<script src="assets/js/modernizr-2.6.2.min.js"></script>
-
 
 </head>
 
@@ -102,11 +101,11 @@
 								</ul>
 
 							</li>
-							<li><a href="help.html">REQUEST HELP</a></li>
-							<li><a href="donations.html">DONATE</a></li>
-							<li><a href="volunteer.html">VOLUNTEER</a></li>
-							<li><a href="about.html">ABOUT US</a></li>
-							<li id="right"><a href="login.html">LOGIN</a></li>
+							<li><a href="help.php">REQUEST HELP</a></li>
+							<li><a href="donations.php">DONATE</a></li>
+							<li><a href="volunteer.php">VOLUNTEER</a></li>
+							<li><a href="about.php">ABOUT US</a></li>
+							<li id="right"><a href="login.php">LOGIN</a></li>
 
 						</ul>
 
@@ -121,14 +120,15 @@
 
 	</header> <!-- /. main-header -->
 
-
 	<div class="page-heading text-center">
 
 		<div class="container zoomIn animated">
 
-			<h1 class="page-title">DONATE<span class="title-under"></span></h1>
+			<h1 class="page-title">REQUEST HELP <span class="title-under"></span></h1>
 			<p class="page-description">
-				Donate money, food boxes or medical supplies to help many families in need.<br>
+				If you need help or know families in urgent need please fill all the<br>
+				info below and we will review it and provide you with the help needed.<br>
+
 			</p>
 
 		</div>
@@ -143,66 +143,64 @@
 
 				<div class="col-md-7 col-sm-12 col-form">
 
-					<h2 class="title-style-2">Fill here to donate <span class="title-under"></span></h2>
+					<h2 class="title-style-2">Fill this Form <span class="title-under"></span></h2>
 
-					<form action="php/mail.php" class="contact-form ajax-form">
+					<form method="POST" class="contact-form ajax-form">
 
 						<div class="row">
 
 							<div class="form-group col-md-8">
-								<label for="txt_donor"><strong>Full Name *</strong></label>
-								<input type="text" name="txt_donor" class="form-control" placeholder="Enter Full Name"
-									id="txt_donor" required>
+								<label for="txt_famname"><strong>Name *</strong></label>
+								<input type="text" name="txt_famname" class="form-control" placeholder="Enter Name" id="txt_username" required>
 							</div>
 
 							<div class="form-group col-md-8">
 								<label for="txt_ssn"><strong>Social Security Number *</strong></label>
-								<input type="number" name="txt_ssn" class="form-control" placeholder="Enter SSN"
-									id="txt_ssn" required>
+								<input type="number" name="txt_ssn" class="form-control" placeholder="Enter SSN" id="txt_ssn" required>
 							</div>
 
 
 							<div class="form-group col-md-8">
 								<label for="txt_phone"><strong>Phone Number *</strong></label>
-								<input type="number" name="txt_phone" class="form-control"
-									placeholder="Enter Phone Number" id="txt_phone" required>
+								<input type="number" name="txt_phone" class="form-control" placeholder="Enter Phone Number" id="txt_phone" required>
 							</div>
 
 							<div class="form-group col-md-8">
 								<label for="txt_addr"><strong>Address *</strong></label>
-								<textarea name="txt_addr" id="txt_addr" class="form-control"
-									placeholder="Enter your full address here." required></textarea>
+								<textarea name="txt_addr" id="txt_addr" class="form-control" placeholder="Enter your full address here." required></textarea>
 							</div>
 
 							<div class="form-group col-md-8">
 								<label for="txt_email"><strong>Email Address</strong> (optional)</label>
-								<input type="text" name="txt_email" class="form-control" placeholder="Enter Email Address"
-									id="txt_email">
+								<input type="text" name="txt_email" class="form-control" placeholder="Enter Email Address" id="txt_email">
 							</div>
 
-                            
 							<div class="form-group col-md-8">
-                                <label for="txt_donation"><strong>Donation Type</strong></label><br>
-                                <input type="checkbox" id="dt_money" name="txt_donation" value="dt_money">
-								<label for="dt_money" style="font-weight: normal;">Money</label><br>
-								<input type="checkbox" id="dt_food" name="txt_donation" value="dt_food">
-								<label for="dt_food" style="font-weight: normal;">Food</label><br>
-								<input type="checkbox" id="dt_shelter" name="txt_donation" value="dt_shelter">
-								<label for="dt_medical" style="font-weight: normal;">Medical Supplies</label><br>
-								<label for="dt_amount" style="margin-right: 5px;"><strong>Quantity</strong></label>
-								<input type="number" name="dt_amount" id="dt_amount" min="1" value="1" >
+								<label for="txt_members"><strong>Family Members *</strong></label>
+								<input type="number" name="txt_members" id="txt_members" min="1" max="10" value="1">
+							</div>
+
+							<div class="form-group col-md-8">
+								<label for="txt_helptype"><strong>What type of help do you need?</strong></label><br>
+								<input type="radio" id="radio_food" name="help" value="radio_food">
+								<label for="radio_food" style="font-weight: normal;">Food</label><br>
+								<input type="radio" id="radio_shelter" name="help" value="radio_shelter">
+								<label for="radio_shelter" style="font-weight: normal;">Shelter</label><br>
+								<input type="radio" id="radio_medical" name="help" value="radio_medical">
+								<label for="radio_medical" style="font-weight: normal;">Medical Attention</label><br>
+								<label for="txt_qty" style="margin-right: 5px;"><strong>Quantity</strong></label>
+								<input type="number" name="txt_qty" id="txt_qty" min="1" max="10" value="1">
 							</div>
 
 							<div class="form-group col-md-8">
 								<label for="txt_cmts"><strong>Other Comments</strong></label>
-								<textarea name="txt_cmts" id="txt_cmts" class="form-control"
-									placeholder="Leave your comments here."></textarea>
+								<textarea name="txt_cmts" id="txt_cmts" class="form-control" placeholder="Leave your comments here."></textarea>
 							</div>
 
 
 						</div>
 						<div class="form-group">
-							<button type="submit" id="bt-request" class="btn btn-primary pull-5">Donate</button>
+							<button type="submit" id="bt-request" class="btn btn-primary pull-5">Submit request</button>
 						</div>
 					</form>
 				</div>
@@ -299,18 +297,15 @@
 									<form action="php/mail.php" class="ajax-form">
 
 										<div class="form-group">
-											<input type="text" name="name" class="form-control" placeholder="Name"
-												required>
+											<input type="text" name="name" class="form-control" placeholder="Name" required>
 										</div>
 
 										<div class="form-group">
-											<input type="email" name="email" class="form-control" placeholder="E-mail"
-												required>
+											<input type="email" name="email" class="form-control" placeholder="E-mail" required>
 										</div>
 
 										<div class="form-group">
-											<textarea name="message" class="form-control" placeholder="Message"
-												required></textarea>
+											<textarea name="message" class="form-control" placeholder="Message" required></textarea>
 										</div>
 
 										<div class="form-group alerts">
@@ -356,3 +351,24 @@
 		</div>
 
 	</footer>
+</body>
+
+</html>
+
+<?php
+require("./php/helpdb.php");
+$connection = connectDB();
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	echo $_POST['txt_email'];
+	$result = addRequest($connection, $_POST["txt_famname"], $_POST["txt_ssn"], $_POST["txt_phone"], $_POST["txt_addr"], $_POST["txt_email"], $_POST["txt_members"], $_POST['help'], $_POST['txt_qty']);
+	if ($result == 1) {
+		echo "<script type='text/javascript'>alert('Request sent. We will get in contact with you shortly');</script>";
+	}
+	if ($result == 2) {
+		echo "<script type='text/javascript'>alert('Request denied. Please note that a maximum of one box per 3 members can be ordered.');</script>";
+	}
+	if ($result == -2) {
+		echo "<script type='text/javascript'>alert('We are sorry. There is not enough supplies to help you at the moment.');</script>";
+	}
+}
+?>

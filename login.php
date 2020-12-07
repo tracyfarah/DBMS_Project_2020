@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php ob_start(); ?>
 <html class="no-js">
 
 <head>
@@ -30,96 +31,96 @@
   <!-- NAVBAR
     ================================================== -->
 
-    <header class="main-header">
+  <header class="main-header">
 
 
-      <nav class="navbar navbar-static-top">
-  
-        <div class="navbar-top">
-  
-          <div class="container">
-            <div class="row">
-  
-              <div class="col-sm-6 col-xs-12">
-  
-                <ul class="list-unstyled list-inline header-contact">
-                  <li> <i class="fa fa-phone"></i> <a href="tel:">+212 658 986 213 </a> </li>
-                  <li> <i class="fa fa-envelope"></i> <a
-                      href="mailto:contact@sadaka.org">contact@sadaka.org</a> </li>
-                </ul> <!-- /.header-contact  -->
-  
-              </div>
-  
-              <div class="col-sm-6 col-xs-12 text-right">
-  
-                <ul class="list-unstyled list-inline header-social">
-  
-                  <li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
-                  <li> <a href="#"> <i class="fa fa-twitter"></i> </a> </li>
-                  <li> <a href="#"> <i class="fa fa-google"></i> </a> </li>
-                  <li> <a href="#"> <i class="fa fa-youtube"></i> </a> </li>
-                  <li> <a href="#"> <i class="fa fa fa-pinterest-p"></i> </a> </li>
-                </ul> <!-- /.header-social  -->
-  
-              </div>
-  
-  
-            </div>
-          </div>
-  
-        </div>
-  
-        <div class="navbar-main">
-  
-          <div class="container">
-  
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-  
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-  
-              </button>
-  
-  
-            </div>
-  
-            <div id="navbar" class="navbar-collapse collapse pull-right">
-  
-              <ul class="nav navbar-nav">
-  
-                <li><a href="index.html">HOME</a></li>
-  
-                <li class="has-child"><a href="causes.html">WHAT WE NEED</a>
-  
-                  <ul class="submenu">
-                    <li class="submenu-item"><a href="causes-single.html">Food boxes </a></li>
-                    <li class="submenu-item"><a href="causes-single.html">Medical kits </a></li>
-                    <li class="submenu-item"><a href="causes-single.html">Beds </a></li>
-                  </ul>
-  
-                </li>
-                <li><a href="help.html">REQUEST HELP</a></li>
-                <li><a href="donations.html">DONATE</a></li>
-                <li><a href="volunteer.html">VOLUNTEER</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li id="right"><a href="login.html">LOGIN</a></li>
-  
-              </ul>
-  
-            </div> <!-- /#navbar -->
-  
-          </div> <!-- /.container -->
-  
-        </div> <!-- /.navbar-main -->
-  
-  
-      </nav>
-  
-    </header> <!-- /. main-header -->
+		<nav class="navbar navbar-static-top">
+
+			<div class="navbar-top">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="col-sm-6 col-xs-12">
+
+							<ul class="list-unstyled list-inline header-contact">
+								<li> <i class="fa fa-phone"></i> <a href="tel:">+212 658 986 213 </a> </li>
+								<li> <i class="fa fa-envelope"></i> <a
+										href="mailto:contact@sadaka.org">contact@sadaka.org</a> </li>
+							</ul> <!-- /.header-contact  -->
+
+						</div>
+
+						<div class="col-sm-6 col-xs-12 text-right">
+
+							<ul class="list-unstyled list-inline header-social">
+
+								<li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
+								<li> <a href="#"> <i class="fa fa-twitter"></i> </a> </li>
+								<li> <a href="#"> <i class="fa fa-google"></i> </a> </li>
+								<li> <a href="#"> <i class="fa fa-youtube"></i> </a> </li>
+								<li> <a href="#"> <i class="fa fa fa-pinterest-p"></i> </a> </li>
+							</ul> <!-- /.header-social  -->
+
+						</div>
+
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="navbar-main">
+
+				<div class="container">
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+
+						</button>
+
+
+					</div>
+
+					<div id="navbar" class="navbar-collapse collapse pull-right">
+
+						<ul class="nav navbar-nav">
+
+							<li><a href="index.html">HOME</a></li>
+
+							<li class="has-child"><a href="causes.html">WHAT WE NEED</a>
+
+								<ul class="submenu">
+									<li class="submenu-item"><a href="causes-single.html">Food boxes </a></li>
+									<li class="submenu-item"><a href="causes-single.html">Medical kits </a></li>
+									<li class="submenu-item"><a href="causes-single.html">Beds </a></li>
+								</ul>
+
+							</li>
+							<li><a href="help.php">REQUEST HELP</a></li>
+							<li><a href="donations.php">DONATE</a></li>
+							<li><a href="volunteer.php">VOLUNTEER</a></li>
+							<li><a href="about.php">ABOUT US</a></li>
+							<li id="right"><a href="login.php">LOGIN</a></li>
+
+						</ul>
+
+					</div> <!-- /#navbar -->
+
+				</div> <!-- /.container -->
+
+			</div> <!-- /.navbar-main -->
+
+
+		</nav>
+
+	</header> <!-- /. main-header -->
 
 
   <div class="page-heading text-center">
@@ -145,33 +146,36 @@
 
           <h2 class="title-style-2">Log in to your account <span class="title-under"></span></h2>
 
-          <form>
+          <form method="POST" class="contact-form ajax-form">
 
             <div class="row">
 
               <div class="form-group col-md-7">
                 <label for="username"><strong>Username</strong></label>
-                <input type="text" name="txt_username" class="form-control" placeholder="Enter Username"
-                  id="txt_username" required>
+                <input type="text" name="txt_username" class="form-control" placeholder="Enter Username" id="txt_username" required>
               </div>
 
               <div class="form-group col-md-7">
                 <label for="txt_pass"><strong>Password</strong></label>
-                <input type="password" name="txt_pass" class="form-control" placeholder="Enter Username" id="txt_pass"
-                  required>
+                <input type="password" name="txt_pass" class="form-control" placeholder="Enter Username" id="txt_pass" required>
               </div>
 
+              <div class="form-group col-md-8">
+                <label for="txt_type"><strong>Section</strong></label><br>
+                <input type="radio" id="clinic" name="txt_type" value="clinic">
+                <label for="clinc" style="font-weight: normal;">Clinic</label><br>
+                <input type="radio" id="shelter" name="txt_type" value="shelter">
+                <label for="shelter" style="font-weight: normal;">Shelter</label><br>
+                <input type="radio" id="food" name="txt_type" value="food">
+                <label for="food" style="font-weight: normal;">Feeding Center</label><br>
+                <input type="radio" id="inventory" name="txt_type" value="inventory">
+                <label for="inventory" style="font-weight: normal;">Inventory</label><br>
+              </div>
 
             </div>
 
             <div class="form-group">
               <button type="submit" class="btn btn-primary pull-5">Sign in</button>
-            </div>
-            <div class="form-group col-md-7 ">
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-              <span class="pull-right" style="margin-top: 2px;"><a href="#"> Forgot password?</a></span>
             </div>
           </form>
         </div>
@@ -317,3 +321,36 @@
     </div>
 
   </footer>
+</body>
+
+</html>
+
+
+<?php
+require("./php/logindb.php");
+$connection = connectDB();
+session_start();
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $result = signInUser($connection, $_POST['txt_username'], $_POST['txt_pass'], $_POST['txt_type']);
+  if ($result == 1) {
+    $_SESSION['id'] = $_POST['txt_pass'];
+    header("Location: clinic_admin.php");
+  }
+  if ($result == 2) {
+    $_SESSION['id'] = $_POST['txt_pass'];
+    header("Location: foodbank_admin.php");
+  }
+  if ($result == 3) {
+    $_SESSION['id'] = $_POST['txt_pass'];
+    header("Location: shelter_admin.php");
+  }
+  if ($result == 4) {
+    $_SESSION['id'] = $_POST['txt_pass'];
+    header("Location: inventory_admin.php");
+  }
+  if ($result == -1) {
+    echo "<script type='text/javascript'>alert('The username, domain or password is wrong. Please try again.');</script>";
+  }
+}
+ob_flush();
+?>
