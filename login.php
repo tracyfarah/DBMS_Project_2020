@@ -46,7 +46,7 @@
 							<ul class="list-unstyled list-inline header-contact">
 								<li> <i class="fa fa-phone"></i> <a href="tel:">+212 658 986 213 </a> </li>
 								<li> <i class="fa fa-envelope"></i> <a
-										href="mailto:contact@sadaka.org">contact@sadaka.org</a> </li>
+										href="#">helplebanon@gmail.com</a> </li>
 							</ul> <!-- /.header-contact  -->
 
 						</div>
@@ -106,7 +106,7 @@
 							<li><a href="help.php">REQUEST HELP</a></li>
 							<li><a href="donations.php">DONATE</a></li>
 							<li><a href="volunteer.php">VOLUNTEER</a></li>
-							<li><a href="about.php">ABOUT US</a></li>
+							<li><a href="about.html">ABOUT US</a></li>
 							<li id="right"><a href="login.php">LOGIN</a></li>
 
 						</ul>
