@@ -165,7 +165,7 @@ $money = getMoney($connection);
 							</div>
 							<div class="btn-holder text-center">
 
-								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
+								<a href="donations.php" class="btn btn-primary" > DONATE NOW</a>
 
 							</div>
 
@@ -193,7 +193,7 @@ $money = getMoney($connection);
 
 							<div class="btn-holder text-center">
 
-								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
+								<a href="donations.php" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
 
 							</div>
 
@@ -222,7 +222,7 @@ $money = getMoney($connection);
 
 							<div class="btn-holder text-center">
 
-								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> SIGN UP NOW</a>
+								<a href="volunteer.php" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> SIGN UP NOW</a>
 
 							</div>
 
@@ -253,7 +253,7 @@ $money = getMoney($connection);
 
 							<div class="btn-holder text-center">
 
-								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
+								<a href="donations.php" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
 
 							</div>
 
