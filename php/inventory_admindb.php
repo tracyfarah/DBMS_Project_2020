@@ -105,7 +105,7 @@ function buyBeds($connection, $id)
     $count = floor($count);
     if ($row['budget'] == 0) {
         echo "<script type='text/javascript'>alert('Not enough money.');</script>";
-    } else if ($row['countof_food_boxes'] < 5) {
+    } else if ($row['budget'] < 5) {
         echo "<script type='text/javascript'>alert('Less than 5 beds have been bought.');</script>";
         $connection->query("UPDATE `organization` SET budget = '0'");
         $connection->query("UPDATE `inventory` SET `countof_beds`= countof_beds + '$count' WHERE Iid = '$id'");
