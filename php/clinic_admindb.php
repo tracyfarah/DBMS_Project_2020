@@ -96,6 +96,13 @@ function requestKit($connection)
 }
 function removeFamily($connection, $SSN)
 {
+    $id = $connection->query("SELECT Clinic_Cid FROM `clinics_log` WHERE Families_SSN = $SSN");
     $connection->query("DELETE FROM `clinics_log` WHERE Families_SSN = $SSN");
+    $res = $id->fetch_assoc();
+    $res = $res['Clinic_Cid'];
+    $member = $connection->query("SELECT members FROM `families` WHERE Families_SSN = $SSN");
+    $member = $member->fetch_assoc();
+    $member = $member['members'];
+    $connection->query("UPDATE `clinic` SET rem_capacity = rem_capacity + $member WHERE Cid = $id");
     echo "<script type='text/javascript'>alert('The Family has been removed from the database, if it exists. Please for updated table.');</script>";
 }

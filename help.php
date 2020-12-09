@@ -54,7 +54,7 @@
 								<li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
 								<li> <a href="#"> <i class="fa fa-twitter"></i> </a> </li>
 								<li> <a href="#"> <i class="fa fa-google"></i> </a> </li>
-								
+
 							</ul> <!-- /.header-social  -->
 
 						</div>
@@ -162,7 +162,7 @@
 								<label for="radio_shelter" style="font-weight: normal;">Shelter</label><br>
 								<input type="radio" id="radio_medical" name="help" value="radio_medical">
 								<label for="radio_medical" style="font-weight: normal;">Medical Attention</label><br>
-								<label for="txt_qty" style="margin-right: 5px;"><strong>Quantity</strong></label>
+								<label for="txt_qty" style="margin-right: 5px;"><strong>Quantity (use only for medical and food)</strong></label>
 								<input type="number" name="txt_qty" id="txt_qty" min="1" max="10" value="1">
 							</div>
 
@@ -187,11 +187,11 @@
 
 	<footer class="main-footer">
 
-<div class="footer-top">
+		<div class="footer-top">
 
-</div>
+		</div>
 
-</footer> <!-- main-footer -->
+	</footer> <!-- main-footer -->
 </body>
 
 </html>

@@ -39,67 +39,67 @@ $id = $_SESSION['id'];
     <header class="main-header">
 
 
-		<nav class="navbar navbar-static-top">
+        <nav class="navbar navbar-static-top">
 
-			<div class="navbar-top">
+            <div class="navbar-top">
 
-				<div class="container">
-					<div class="row">
+                <div class="container">
+                    <div class="row">
 
-						<div class="col-sm-6 col-xs-12">
+                        <div class="col-sm-6 col-xs-12">
 
-							<ul class="list-unstyled list-inline header-contact">
-								<li> <i class="fa fa-envelope"></i> helplebanon@gmail.com </li>
-							</ul> <!-- /.header-contact  -->
+                            <ul class="list-unstyled list-inline header-contact">
+                                <li> <i class="fa fa-envelope"></i> helplebanon@gmail.com </li>
+                            </ul> <!-- /.header-contact  -->
 
-						</div>
+                        </div>
 
-						<div class="col-sm-6 col-xs-12 text-right">
+                        <div class="col-sm-6 col-xs-12 text-right">
 
-							<ul class="list-unstyled list-inline header-social">
+                            <ul class="list-unstyled list-inline header-social">
 
-								<li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
-								<li> <a href="#"> <i class="fa fa-twitter"></i> </a> </li>
-								<li> <a href="#"> <i class="fa fa-google"></i> </a> </li>
-								
-							</ul> <!-- /.header-social  -->
+                                <li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
+                                <li> <a href="#"> <i class="fa fa-twitter"></i> </a> </li>
+                                <li> <a href="#"> <i class="fa fa-google"></i> </a> </li>
 
-						</div>
+                            </ul> <!-- /.header-social  -->
 
-
-					</div>
-				</div>
-
-			</div>
-
-			<div class="navbar-main">
-
-				<div class="container">
-
-					<div id="navbar" class="navbar-collapse collapse pull-right">
-
-						<ul class="nav navbar-nav">
-
-							<li><a href="index.html">HOME</a></li>
-
-							<li><a href="causes.php">WHAT WE NEED</a></li>
-							<li><a href="help.php">REQUEST HELP</a></li>
-							<li><a href="donations.php">DONATE</a></li>
-							<li><a href="volunteer.php">VOLUNTEER</a></li>
-							<li><a href="about.html">ABOUT US</a></li>
-							<li id="right"><a href="login.php">LOGIN</a></li>
-
-						</ul>
-					</div> <!-- /#navbar -->
-
-				</div> <!-- /.container -->
-
-			</div> <!-- /.navbar-main -->
+                        </div>
 
 
-		</nav>
+                    </div>
+                </div>
 
-	</header> <!-- /. main-header -->
+            </div>
+
+            <div class="navbar-main">
+
+                <div class="container">
+
+                    <div id="navbar" class="navbar-collapse collapse pull-right">
+
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="index.html">HOME</a></li>
+
+                            <li><a href="causes.php">WHAT WE NEED</a></li>
+                            <li><a href="help.php">REQUEST HELP</a></li>
+                            <li><a href="donations.php">DONATE</a></li>
+                            <li><a href="volunteer.php">VOLUNTEER</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li id="right"><a href="login.php">LOGIN</a></li>
+
+                        </ul>
+                    </div> <!-- /#navbar -->
+
+                </div> <!-- /.container -->
+
+            </div> <!-- /.navbar-main -->
+
+
+        </nav>
+
+    </header> <!-- /. main-header -->
 
     <div class="page-heading text-center">
 
@@ -167,11 +167,11 @@ $id = $_SESSION['id'];
 
     <footer class="main-footer">
 
-<div class="footer-top">
+        <div class="footer-top">
 
-</div>
+        </div>
 
-</footer> <!-- main-footer -->
+    </footer> <!-- main-footer -->
 </body>
 
 </html>

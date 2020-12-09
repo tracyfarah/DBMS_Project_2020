@@ -99,6 +99,13 @@ function requestBed($connection, $id)
 }
 function removeFamily($connection, $SSN)
 {
+    $id = $connection->query("SELECT Shelter_Sid FROM `shelter_log` WHERE Families_SSN = $SSN");
     $connection->query("DELETE FROM `shelter_log` WHERE Families_SSN = $SSN");
+    $res = $id->fetch_assoc();
+    $res = $res['Shelter_Sid'];
+    $member = $connection->query("SELECT members FROM `families` WHERE Families_SSN = $SSN");
+    $member = $member->fetch_assoc();
+    $member = $member['members'];
+    $connection->query("UPDATE `shelter` SET rem_capacity = rem_capacity + $member WHERE `Sid` = $id");
     echo "<script type='text/javascript'>alert('The Family has been removed from the database, if it exists. Please reload for updated table.');</script>";
 }

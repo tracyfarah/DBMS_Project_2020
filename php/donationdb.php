@@ -31,12 +31,13 @@ function addDonation($connection, $fullname, $SSN, $number, $address, $email, $d
         executeQuery($connection, "UPDATE organization SET budget = budget + '$donation_amount' WHERE name = '$orgname';");
     }
     if ($donation_type == "dt_food") {
+        echo "hello";
         executeQuery($connection, "INSERT INTO donates_to (Donor_idDonor, Organization_name, donation_type, quantity) VALUES ('$SSN', '$orgname', 'Food', '$donation_amount')");
-        executeQuery($connection, "UPDATE inventory SET countof_food_boxes = countof_food_boxes + '$donation_amount' WHERE Iid = '1';");
+        executeQuery($connection, "UPDATE inventory SET countof_food_boxes = countof_food_boxes + '$donation_amount' WHERE Iid = '564387';");
     }
     if ($donation_type == "dt_shelter") {
         executeQuery($connection, "INSERT INTO donates_to (Donor_idDonor, Organization_name, donation_type, quantity) VALUES ('$SSN', '$orgname', 'Medical Supplies', '$donation_amount')");
-        executeQuery($connection, "UPDATE inventory SET countof_medical_kits = countof_medical_kits + '$donation_amount' WHERE Iid = '1';");
+        executeQuery($connection, "UPDATE inventory SET countof_medical_kits = countof_medical_kits + '$donation_amount' WHERE Iid = '564387';");
     }
 
     return $results;

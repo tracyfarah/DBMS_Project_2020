@@ -150,9 +150,9 @@ $money = getMoney($connection);
 
 					<div class="col-md-3 col-sm-6">
 
-						<div class="cause">
+						<div class="cause" style="height: 500px;">
 
-							<img src="assets/images/foodbox.jpg" style="height:400px;" alt="" class="cause-img">
+							<img src="assets/images/foodbox.jpg" style="height: fit-to-scale;" alt="" class="cause-img">
 
 							<div class="progress cause-progress">
 								<?php $perc = ($food / 300) * 100;
@@ -161,11 +161,11 @@ $money = getMoney($connection);
 
 							<h4 class="cause-title"><a href="#">FOOD BOXES</a></h4>
 							<div class="cause-details">
-								
+
 							</div>
 							<div class="btn-holder text-center">
 
-								<a href="donations.php" class="btn btn-primary" > DONATE NOW</a>
+								<a href="./donations.php" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
 
 							</div>
 
@@ -177,9 +177,9 @@ $money = getMoney($connection);
 
 					<div class="col-md-3 col-sm-6">
 
-						<div class="cause">
+						<div class="cause" style="height: 500px;">
 
-							<img src="assets/images/medkit.jpg" style="height:400px;" alt="" class="cause-img">
+							<img src="assets/images/medkit.jpg" style="height: fit-to-scale;" alt="" class="cause-img">
 
 							<div class="progress cause-progress">
 								<?php $perc = ($kits / 200) * 100;
@@ -188,12 +188,12 @@ $money = getMoney($connection);
 
 							<h4 class="cause-title"><a href="#">MEDICAL KITS</a></h4>
 							<div class="cause-details">
-								
+
 							</div>
 
 							<div class="btn-holder text-center">
 
-								<a href="donations.php" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
+								<a href="./donations.php" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
 
 							</div>
 
@@ -206,9 +206,9 @@ $money = getMoney($connection);
 
 					<div class="col-md-3 col-sm-6">
 
-						<div class="cause">
+						<div class="cause" style="height: 500px;">
 
-							<img src="assets/images/volunteers.jpg" style="height:400px;" alt="" class="cause-img">
+							<img src="assets/images/volunteers.jpg" style="height: fit-to-scale;" alt="" class="cause-img">
 
 							<div class="progress cause-progress">
 								<?php $perc = ($volunteers / 150) * 100;
@@ -217,12 +217,12 @@ $money = getMoney($connection);
 
 							<h4 class="cause-title"><a href="#">VOLUNTEERS</a></h4>
 							<div class="cause-details">
-								
+
 							</div>
 
 							<div class="btn-holder text-center">
 
-								<a href="volunteer.php" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> SIGN UP NOW</a>
+								<a href="./volunteers.php" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> SIGN UP NOW</a>
 
 							</div>
 
@@ -234,9 +234,9 @@ $money = getMoney($connection);
 
 					<div class="col-md-3 col-sm-6">
 
-						<div class="cause">
+						<div class="cause" style="height: 500px;">
 
-							<img src="assets/images/donation.jpg" style="height:400px;" alt="" class="cause-img">
+							<img src="assets/images/donation.jpg" style="height: fit-to-scale;" alt="" class="cause-img">
 
 							<div class="progress cause-progress">
 
@@ -248,12 +248,12 @@ $money = getMoney($connection);
 
 							<h4 class="cause-title"><a href="#">MONEY </a></h4>
 							<div class="cause-details">
-								
+
 							</div>
 
 							<div class="btn-holder text-center">
 
-								<a href="donations.php" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> DONATE NOW</a>
+								<a href="./donations.php" class="btn btn-primary" > DONATE NOW</a>
 
 							</div>
 
@@ -274,7 +274,7 @@ $money = getMoney($connection);
 
 		</div>
 
-</footer> <!-- main-footer -->
+	</footer> <!-- main-footer -->
 
 
 

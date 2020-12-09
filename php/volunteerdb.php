@@ -22,7 +22,7 @@ function connectDB()
     }
     return $conn;
 }
-function addDonation($connection, $fullname, $SSN, $number, $address, $email, $donation_type)
+function addVolunteer($connection, $fullname, $SSN, $number, $address, $email, $donation_type)
 {
     $orgname = "HelpLebanon";
     $results = executeQuery($connection, "INSERT INTO volunteers (Vid, name, phone_number, address, email) VALUES ('$SSN', '$fullname', '$number', '$address', '$email')");
@@ -31,21 +31,30 @@ function addDonation($connection, $fullname, $SSN, $number, $address, $email, $d
         executeQuery($connection, "UPDATE `clinics` SET volunteers = volunteers + '1' WHERE Cid = '$id'");
         executeQuery($connection, "INSERT INTO `medical_volunteers` (`Clinics_Cid`, `Volunteers_Vid`) VALUES ('$id', '$SSN')");
         executeQuery($connection, "INSERT INTO `volunteer_in` (`Organization_name`, `Volunteers_Vid`) VALUES ('$orgname', '$SSN')");
+        $location = getLocation($connection, "SELECT `location` FROM `clinics` WHERE Cid = '$id'");
     }
     if ($donation_type == "vt_food") {
         $id = getMinFid($connection, "SELECT `Fid` FROM `food-bank` WHERE volunteers = (SELECT MIN(volunteers) FROM `food-bank`)");
         executeQuery($connection, "UPDATE `food-bank` SET volunteers = volunteers + '1' WHERE Fid = '$id'");
         executeQuery($connection, "INSERT INTO `food-bank_volunteers` (`Food-Bank_Fid`, Volunteers_Vid) VALUES ('$id', '$SSN')");
         executeQuery($connection, "INSERT INTO `volunteer_in` (`Organization_name`, `Volunteers_Vid`) VALUES ('$orgname', '$SSN')");
+        $location = getLocation($connection, "SELECT `location` FROM `food-bank` WHERE Fid = '$id'");
     }
     if ($donation_type == "vt_shelter") {
         $id = getMinSid($connection, "SELECT `Sid` FROM `shelter` WHERE volunteers = (SELECT MIN(volunteers) FROM `shelter`)");
-        executeQuery($connection, "UPDATE `shelter` SET volunteers = volunteers + '1' WHERE Fid = '$id'");
+        executeQuery($connection, "UPDATE `shelter` SET volunteers = volunteers + '1' WHERE `Sid` = '$id'");
         executeQuery($connection, "INSERT INTO `shelter_volunteers` (`Shelter_Sid`, Volunteers_Vid) VALUES ('$id', '$SSN')");
         executeQuery($connection, "INSERT INTO `volunteer_in` (`Organization_name`, `Volunteers_Vid`) VALUES ('$orgname', '$SSN')");
+        $location = getLocation($connection, "SELECT `location` FROM `shelter` WHERE `Sid` = '$id'");
     }
+    return $location;
+}
+function getLocation($connection, $query)
+{
+    $result = $connection->query($query);
 
-    return $results;
+    $row = $result->fetch_assoc();
+    return $row['location'];
 }
 function getMinFid($connection, $query)
 {

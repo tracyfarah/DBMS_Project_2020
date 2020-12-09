@@ -70,7 +70,7 @@ function addRequest($connection, $fullname, $SSN, $number, $address, $email, $fa
         }
         executeQuery($connection, "INSERT INTO `clinics_log` (`Clinics_Cid`, `Families_SSN`) VALUES ('$id', '$SSN')");
         executeQuery($connection, "INSERT INTO `reach_out` (`Families_SSN`, `Organization_name`, `type`, `quantity`) VALUES ('$SSN', '$orgname', 'Medical', '$request_amount')");
-        executeQuery($connection, "UPDATE `shelter` SET rem_capacity = rem_capacity - '$request_amount' WHERE `Cid`= $id");
+        executeQuery($connection, "UPDATE `clinics` SET rem_capacity = rem_capacity - '$request_amount' WHERE `Cid`= $id");
         return 1;
     }
 }
